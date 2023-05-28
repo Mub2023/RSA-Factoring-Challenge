@@ -7,8 +7,8 @@
  */
 int fatorize_all(char *buff)
 {
-	u_int32_t n;
-	u_int32_t t;
+	unsigned long int n;
+	unsigned long int t;
 
 	n = atoi(buff);
 
@@ -16,7 +16,7 @@ int fatorize_all(char *buff)
 	{
 		if (n % t == 0)
 		{
-			printf("%d=%d*%d\n",n,n/t,t);
+			printf("%lu=%lu*%lu\n",n,n/t,t);
 			break;
 		}
 	}
