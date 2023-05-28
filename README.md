@@ -70,29 +70,47 @@ How far can you go in less than 5 seconds?
 
 Read: RSA Factoring Challenge
 
-***
-julien@ubuntu:~/RSA Factoring Challenge$ cat tests/rsa-1
-6
-julien@ubuntu:~/RSA Factoring Challenge$ ./rsa tests/rsa-1
-6=3*2
-julien@ubuntu:~/RSA Factoring Challenge$ cat tests/rsa-2
-77
-julien@ubuntu:~/RSA Factoring Challenge$ ./rsa tests/rsa-2
-77=11*7
-julien@ubuntu:~/RSA Factoring Challenge$ [...]  
-julien@ubuntu:~/RSA Factoring Challenge$ cat tests/rsa-15
-239821585064027
-julien@ubuntu:~/RSA Factoring Challenge$ ./rsa tests/rsa-15 
-239821585064027=15486481*15485867
-julien@ubuntu:~/RSA Factoring Challenge$ cat tests/rsa-16
-2497885147362973
-julien@ubuntu:~/RSA Factoring Challenge$ ./rsa tests/rsa-16
-2497885147362973=49979141*49978553
-julien@ubuntu:~/RSA Factoring Challenge$ [...]
+ ***julien@ubuntu:~/RSA Factoring Challenge$ cat tests/rsa-1  ***
+ 
+   
+   ***6  ***
+   
+   ***julien@ubuntu:~/RSA Factoring Challenge$ ./rsa tests/rsa-1  ***
+ 
+   
+   ***6=3*2  ***
+ 
+   ***julien@ubuntu:~/RSA Factoring Challenge$ cat tests/rsa-2
+   
+   ***77
+ 
+   ***julien@ubuntu:~/RSA Factoring Challenge$ ./rsa tests/rsa-2
+ 
+   ***77=11*7
+ 
+   ***julien@ubuntu:~/RSA Factoring Challenge$ [...]  
+ 
+   ***julien@ubuntu:~/RSA Factoring Challenge$ cat tests/rsa-15
+ 
+   ***239821585064027
+ 
+   ***julien@ubuntu:~/RSA Factoring Challenge$ ./rsa tests/rsa-15 
+ 
+   ***239821585064027=15486481*15485867
+ 
+   ***julien@ubuntu:~/RSA Factoring Challenge$ cat tests/rsa-16
+ 
+   ***2497885147362973
+ 
+   ***julien@ubuntu:~/RSA Factoring Challenge$ ./rsa tests/rsa-16
+ 
+   ***2497885147362973=49979141*49978553
+ 
+   ***julien@ubuntu:~/RSA Factoring Challenge$ [...]
 
-***
+
 
 File: factors
 File: rsa
 
-***thanks for checking me ***
+***thanks for checking me***
