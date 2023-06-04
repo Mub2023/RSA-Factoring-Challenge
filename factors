@@ -1,22 +1,25 @@
 #!/usr/bin/python3
-"""Module that factorize as many numbers as possible
+"""factorize as many numbers as possible
  into a product of two smaller numbers."""
 from sys import argv
 
 
 def factorize(v):
     """"print a simple descomposition of an integer > 1"""
-    x = 2
+    f = 2
 
     if v < 2:
         return
-    while v % x:
-        x += 1
-        if x == 1000:
-            x = v ** 0.5
-            print("{:.0f}={:.0f}*{:.0f}".format(v, v / x, x))
+    if v % f == 0:
+        print("{:.0f}={:.0f}*{:.0f}".format(v, v / f, f))
+        return
+    f = 3
+    while f * f <= v:
+        if f > 1000:
+            print("{:.0f}={:.0f}*{:.0f}".format(v, v ** 0.5, v ** 0.5))
             return
-    print("{:.0f}={:.0f}*{:.0f}".format(v, v / x, x))
+        f += 2
+    print("{:.0f}={:.0f}*{:.0f}".format(v, v / f , f))
 
 
 if len(argv) != 2:
