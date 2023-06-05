@@ -6,20 +6,25 @@ from sys import argv
 
 def factorize(v):
     """"print a simple descomposition of an integer > 1"""
-    f = 2
+    x = 2
 
     if v < 2:
         return
+    if v % x == 0:
+        print("{:.0f}={:.0f}*{:.0f}".format(v, v / x, x))
+        return
+    f = 3
     if v % f == 0:
         print("{:.0f}={:.0f}*{:.0f}".format(v, v / f, f))
         return
-    f = 3
-    while f * f <= v:
-        if f > 1000:
+    while f < v / 2:
+        if f > 2000:
             print("{:.0f}={:.0f}*{:.0f}".format(v, v ** 0.5, v ** 0.5))
             return
-        f += 2
-    print("{:.0f}={:.0f}*{:.0f}".format(v, v / f , f))
+        if v % f == 0: 
+            print("{:.0f}={:.0f}*{:.0f}".format(v, v / f , f))
+            break
+        f += 2 
 
 
 if len(argv) != 2:
@@ -34,4 +39,4 @@ try:
             factorize(v)
             line = file.readline()
 except:
-    exit()
+    pass
