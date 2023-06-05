@@ -1,0 +1,35 @@
+#!/usr/bin/python3
+"""factorize as many numbers as possible
+ into a product of two smaller numbers."""
+from sys import argv
+from math import sqrt
+
+
+def factorize(v):
+    """"print a simple descomposition of an integer > 1"""
+    x = 2
+
+    if v < 2:
+        return
+    if v % x == 0:
+        print("{:.0f}={:.0f}*{:.0f}".format(v, v / x, x))
+        return
+    limit = int(sqrt(v))
+    for factor in range(3, limit + 1, 2):
+        if v % factor == 0:
+            print("{:.0f}={:.0f}*{:.0f}".format(v, v / factor , factor))
+            break 
+    else:
+        print("{:.0f}={:.0f}*{:.0f}".format(v, v , 1))
+
+
+if len(argv) != 2:
+    exit()
+
+try:
+    with open(argv[1]) as file:
+        for line in file:
+            v = int(line.strip())
+            factorize(v)
+except:
+    pass
