@@ -24,7 +24,7 @@ def factorize(v):
         if v % f == 0: 
             print("{:.0f}={:.0f}*{:.0f}".format(v, v / f , f))
             break
-        f += 2 
+        f += 1 
 
 
 if len(argv) != 2:
